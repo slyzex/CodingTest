@@ -7,7 +7,7 @@ import { fetchDirections } from './functions/directionsApi';
 
 const MapScreen = () => {
 
-  const [transportationMode, setTransportationMode] = useState<'Car' | 'Public Transport'>('Car');
+  const [transportationMode, setTransportationMode] = useState<'Car' | 'Public Transportion'>('Car');
   const [points, setPoints] = useState<Coordinate[]>([]);
   const [routeCoordinates, setRouteCoordinates] = useState<Coordinate[]>([]);
   
@@ -49,7 +49,7 @@ const MapScreen = () => {
         onValueChange={(itemValue) => setTransportationMode(itemValue)}
       >
         <Picker.Item label="Car" value="Car" />
-        <Picker.Item label="Public Transport" value="Public Transport" />
+        <Picker.Item label="Public Transportion" value="Public Transportion" />
       </Picker>
       <MapView
         style={styles.map}
