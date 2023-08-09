@@ -13,7 +13,7 @@
         <!-- This is where you should add your meta-data for the Google Maps API key -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCgN7F39U0AsSNXuVVtkz0x4KWMfLHZDLQ"/>
+            android:value="@string/google_maps_api_key"/>
 
         <activity
             android:name=".MainActivity"
